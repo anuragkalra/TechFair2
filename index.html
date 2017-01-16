@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>McGill TechFair</title>
+  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+  <meta name="author" content="Vincent Garreau" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" media="screen" href="custom/css/custom-style-1.css">
+
+  <!-- Particles CSS -->
+  <link rel="stylesheet" media="screen" href="tools/demo/css/style.css">
+
+  <!-- fonts -->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">
+  
+  <!-- Bootstrap cdn -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <!-- jQuery cdn -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+  <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+        font-size: 48px;
+      }
+      .navbar {
+        text-transform: uppercase;
+        background-color: #F0A202
+        color: #0E1428;
+        margin-bottom: -4px
+      }
+  </style>
+
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">McGill TechFair</a>
+    </div>
+  </div>
+</nav>
+
+<!-- particles.js container -->
+<div id="particles-js">
+  <img id="techfair-logo" src="custom/img/TechFairLogo.png" class="cover">
+</div>
+<div id="about-us">
+About
+</div>
+
+<!-- scripts -->
+<script src="tools/particles.js"></script>
+<script src="tools/demo/js/app.js"></script>
+
+<script>
+  var count_particles, stats, update;
+  stats = new Stats;
+  stats.setMode(0);
+  stats.domElement.style.position = 'absolute';
+  stats.domElement.style.left = '0px';
+  stats.domElement.style.top = '0px';
+  document.body.appendChild(stats.domElement);
+  count_particles = document.querySelector('.js-count-particles');
+  update = function() {
+    stats.begin();
+    stats.end();
+    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+    }
+    requestAnimationFrame(update);
+  };
+  requestAnimationFrame(update);
+</script>
+
+</body>
+</html>
