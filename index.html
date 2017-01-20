@@ -1,84 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
   <title>McGill TechFair</title>
-  <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
-  <meta name="author" content="Vincent Garreau" />
+
+  <meta charset="utf-8">
+  <meta name="description" content="McGill Techfair Website">
+  <meta name="author" content="Anurag Kalra" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" media="screen" href="custom/css/custom-style-1.css">
-
-  <!-- Particles CSS -->
-  <link rel="stylesheet" media="screen" href="tools/demo/css/style.css">
-
-  <!-- fonts -->
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">
   
-  <!-- Bootstrap cdn -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- Bootstrap JS cdn -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  
   <!-- jQuery cdn -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 
-  <style>
-      body {
-        font-family: 'Roboto', sans-serif;
-        font-size: 48px;
-      }
-      .navbar {
-        text-transform: uppercase;
-        background-color: #F0A202
-        color: #0E1428;
-        margin-bottom: -4px
-      }
-  </style>
+  <!-- Google fonts cdn-->
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto">
+  <!-- Awesome fonts cdn-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!-- Bootstrap CSS cdn-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  
+  <!-- Particles CSS -->
+  <link rel="stylesheet" media="screen" href="tools/demo/css/style.css">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" media="screen" href="custom/css/styles.css">
+  <link rel="stylesheet" media="screen" href="custom/css/custom-style-1.css">
+  <link rel="stylesheet" media="screen" href="custom/css/navbar-style.css">
+  <link rel="stylesheet" media="screen" href="custom/css/fonts.css">
 
 </head>
 <body>
 
-<nav class="navbar">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">McGill TechFair</a>
+<div id="custom-navbar-1" class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header"><a class="navbar-brand" href="#">McGill Techfair</a>
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <div class="collapse navbar-collapse navbar-menubuilder">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#about-us">About Us</a>
+                </li>
+                <li><a href="#volunteer">Volunteer</a>
+                </li>
+                <li><a href="#our-team">Our Team</a>
+                </li>
+                <li><a href="#">Home</a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
-</nav>
+</div>
 
 <!-- particles.js container -->
-<div id="particles-js">
-  <img id="techfair-logo" src="custom/img/TechFairLogo.png" class="cover">
+<div id="parent">
+  <div id="particles-js">
+  </div>
+  <div id="curtain">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-xs-12">
+          <img id="techfair-logo" src="custom/img/TechFairLogo.png">
+        </div>
+        <div class="col-md-4 col-xs-12">
+           Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, adipisci velit, END
+           <div class="row landing-info">
+           eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione END
+           </div>
+           <div class="row landing-info">
+           sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. END
+           </div>
+           <div class="row landing-info">
+           voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, END
+           </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<div id="about-us">
-About
+
+<!-- ABOUT-US -->
+<div id="about-us" class="content">
+  <div class=triangle-separator>
+    <img id="triangle-1" src="custom/img/pattern-1.png">
+  </div>
+  <div class="section-header">
+    <h2>What is Techfair?</h2>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 column">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+        </p>
+      </div>
+      <div class="col-lg-6 col-md-6 column">
+        <div>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
+<!--END ABOUT-US-->
+
+<div id="volunteer" class="content"> 
+  <div class=triangle-separator>
+    <img id="triangle-1" src="custom/img/pattern-1.png">
+  </div>
+  <div class="section-header">
+    <h2>Get involved</h2>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 column">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+        </p>
+      </div>
+      <div class="col-lg-6 col-md-6 column">
+        <div>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+        </div>
+      </div>
+    </div>
+  </div>  
+</div>
+
+<div id="our-team" class="content">
+  <div class=triangle-separator>
+    <img id="triangle-1" src="custom/img/pattern-1.png">
+  </div>
+  <div class="section-header">
+    <h2>Our Team</h2>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 column">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+        </p>
+      </div>
+      <div class="col-lg-6 col-md-6 column">
+        <div>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="contact" class="content">
+  <div class=triangle-separator>
+    <img id="triangle-1" src="custom/img/pattern-1.png">
+  </div>
+  <div class="section-header">
+    <h2>Contact us</h2>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 column">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+        </p>
+      </div>
+      <div class="col-lg-6 col-md-6 column">
+        <div>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <!-- scripts -->
 <script src="tools/particles.js"></script>
 <script src="tools/demo/js/app.js"></script>
-
-<script>
-  var count_particles, stats, update;
-  stats = new Stats;
-  stats.setMode(0);
-  stats.domElement.style.position = 'absolute';
-  stats.domElement.style.left = '0px';
-  stats.domElement.style.top = '0px';
-  document.body.appendChild(stats.domElement);
-  count_particles = document.querySelector('.js-count-particles');
-  update = function() {
-    stats.begin();
-    stats.end();
-    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
-      count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
-    }
-    requestAnimationFrame(update);
-  };
-  requestAnimationFrame(update);
-</script>
 
 </body>
 </html>

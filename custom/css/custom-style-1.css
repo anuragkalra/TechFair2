@@ -1,10 +1,59 @@
+div{
+    --bg-red-particles: #A51C30;
+    --bg-red-1: #DA291C;
+    --bg-red-2: #A51C30;
+    --bg-red-3: #A7333F;
+    --bg-red-4: #74121D;
+    --bg-red-5: #580C1F;
+    --bg-red-6: #FF6F59;
+}
+
 #particles-js {
     position: relative;
+    background-color: var(--bg-red-particles);
+    min-height: 100%
 }
-#particles-js #techfair-logo{
+
+#curtain{
+    padding: 100px 40px 10px;
     position: absolute;
-    /* position in top left of #tobecovered */
-    top: 0; /* top of #tobecovered */
-    left: 0; /* left of #tobecovered */
-    width: 400px;
+    top: 0;
+    left: 0;
+}
+#curtain #techfair-logo{
+    width: 600px;
+}
+div.row.landing-info{
+    padding: 20px;
+}
+
+div.content {
+    min-height: 100%;
+}
+
+div.section-header {
+    padding-top: 20px;
+    color : #FFFFFF;
+}
+
+div.triangle-separator {
+    height: 100px;
+    overflow: hidden;
+}
+
+
+#about-us{
+    background-color: var(--bg-red-1);
+}
+
+#volunteer{
+    background-color: var(--bg-red-2);
+}
+
+#our-team{
+    background-color: var(--bg-red-3);
+}
+
+#contact{
+    background-color: var(--bg-red-4);   
 }

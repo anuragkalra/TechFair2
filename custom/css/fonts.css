@@ -1,0 +1,16 @@
+#custom-navbar-1.navbar-default{
+	font-family: 'Roboto', sans-serif;
+	text-transform: uppercase;
+}
+#parent #curtain{
+	color: #FFFFFF;	
+	font-family: 'Roboto', sans-serif;
+}
+
+div.content .section-header h2{
+	font-family: 'Roboto', sans-serif;
+}
+div.content .container {
+	font-family: 'Roboto', sans-serif;
+	color: #FFFFFF;	
+}

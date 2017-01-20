@@ -1,0 +1,43 @@
+#custom-navbar-1.navbar-default .navbar-brand {
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    padding: 10px;
+}
+#custom-navbar-1.navbar-default {
+    font-size: 15px;
+    background-color: rgba(88, 2, 31, 1);
+    margin-bottom: 0px;
+}
+#custom-navbar-1.navbar-default .navbar-nav{
+    padding: 10px;
+}
+
+#custom-navbar-1.navbar-default .navbar-nav>li>a {
+    color: rgba(119, 119, 119, 1);
+    background-color: rgba(88, 18, 31, 1);
+}
+#custom-navbar-1.navbar-default .navbar-nav>li>a:hover,
+#custom-navbar-1.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(189, 106, 117, 1);
+    background-color: rgba(116, 18, 29, 1);
+}
+#custom-navbar-1.navbar-default .navbar-nav>.active>a,
+#custom-navbar-1.navbar-default .navbar-nav>.active>a:hover,
+#custom-navbar-1.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(165, 28, 48, 1);
+}
+#custom-navbar-1.navbar-default .navbar-toggle {
+    border-color: #a51c30;
+}
+#custom-navbar-1.navbar-default .navbar-toggle:hover,
+#custom-navbar-1.navbar-default .navbar-toggle:focus {
+    background-color: #a51c30;
+}
+#custom-navbar-1.navbar-default .navbar-toggle .icon-bar {
+    background-color: #a51c30;
+}
+#custom-navbar-1.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-navbar-1.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #58021f;
+}
