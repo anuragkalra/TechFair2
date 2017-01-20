@@ -6,11 +6,16 @@ div{
     --bg-red-4: #74121D;
     --bg-red-5: #580C1F;
     --bg-red-6: #FF6F59;
+
+    --bg-light-red: #F28080;
+
+    --bg-white: #FFFFFF;
+    --bg-white-particles: #DDDDDD;
 }
 
 #particles-js {
     position: relative;
-    background-color: var(--bg-red-particles);
+    background-color: var(--bg-white);
     min-height: 100%
 }
 
@@ -43,17 +48,17 @@ div.triangle-separator {
 
 
 #about-us{
-    background-color: var(--bg-red-1);
+    background-color: var(--bg-white);
 }
 
 #volunteer{
-    background-color: var(--bg-red-2);
+    background-color: var(--bg-white);
 }
 
 #our-team{
-    background-color: var(--bg-red-3);
+    background-color: var(--bg-white);
 }
 
 #contact{
-    background-color: var(--bg-red-4);   
+    background-color: var(--bg-white);   
 }
