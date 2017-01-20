@@ -35,9 +35,13 @@ div.row.landing-info{
 div.content {
     min-height: 100%;
 }
+div.container-info{
+    padding: 20px;
+}
 
 div.section-header {
     padding-top: 20px;
+    padding-bottom: 20px;
     color : #FFFFFF;
 }
 
